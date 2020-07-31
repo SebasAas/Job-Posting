@@ -10,7 +10,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// Routes
-app.use(require('../routes/routes'));
-
 module.exports = app;

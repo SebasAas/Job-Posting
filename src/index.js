@@ -9,6 +9,12 @@ const app = require('./server/server');
 // Database
 require('./database/connectionString');
 
+// Routes
+app.use(require('./routes/routes'));
+
+// Repopulate database
+// require('./utils/helper');
+
 const port = process.env.PORT || 4000;
 
 app.listen(port, () => {

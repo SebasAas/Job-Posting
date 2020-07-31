@@ -2,8 +2,10 @@ const { Router } = require('express');
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  return res.send("Conectado")
-})
+const {
+  getAllJobs
+} = require('../controllers/jobController')
+
+router.get('/', getAllJobs)
 
 module.exports = router;

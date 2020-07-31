@@ -6,7 +6,7 @@ const {
   USERDB, PASSWORDDB, DBHOSTCLOUD, DB,
 } = process.env;
 
-const uri = `mongodb+srv://${USERDB}:${PASSWORDDB}@${DBHOSTCLOUD}/${DB}?retryWrites=true&w=majority;`;
+const uri = `mongodb+srv://${USERDB}:${PASSWORDDB}@${DBHOSTCLOUD}/${DB}?retryWrites=true&w=majority`;
 
 
 connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
